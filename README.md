@@ -35,3 +35,14 @@ Como vemos podemos acceder a la tabla tanto desde HIVE como desde Spark
 6- Además, si vamos a MySQL y consultamos el metastore de HIVE, podemos ver lo siguiente:
 mysql> use metastore;
 Vemos que la tabla se ha registrado correctamente y que todo está OK
+
+## zaramazon.py
+Ejemplo de Spark Streaming. Los datos se generan usando JSON Data Generator y se escriben en una cola Kafka, para posteriormente ser consumidos y procesados por el proceso Spark.
+
+1- Instalar JSON Data Generator: https://github.com/acesinc/json-data-generator
+
+2- Lanzar Kafka: kafka-server-start /usr/local/etc/kafka/server.properties
+
+3- Lanzar JSON Generator: java -jar json-data-generator-1.2.1.jar zaramazonConfig.json
+
+4- Ejecutar zaramazon.py
