@@ -1,0 +1,24 @@
+{
+    "eventFrequency": 100,
+    "varyEventFrequency": true,
+    "repeatWorkflow": true,
+    "timeBetweenRepeat": 1000,
+    "varyRepeatFrequency": true,
+    "steps": [{
+            "config": [{
+                    "product_id": "integer(1, 5)",
+                    "item_type": "random('trouser', 'jean', 'shirt', 'shoe', 'jacket')",
+                    "way": "random('web', 'store')",
+                    "location": {
+                        "lat": "double(-90,0, 90.0)",
+                        "lon": "double(-180.0, 180.0)"
+                    },
+                    "shop_id": "integer(1, 100)",
+                    "price": "double(0, 100)",
+                    "timestamp": "now()",
+                    "payment_type": "random('cash', 'card', 'paypal')"
+                }
+            ],
+            "duration": 0
+        }]
+}
