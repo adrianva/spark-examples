@@ -37,7 +37,7 @@ mysql> use metastore;
 Vemos que la tabla se ha registrado correctamente y que todo está OK
 
 ## zaramazon.py
-Ejemplo de Spark Streaming. Los datos se generan usando JSON Data Generator y se escriben en una cola Kafka, para posteriormente ser consumidos y procesados por el proceso Spark.
+Ejemplo de Spark Streaming. Los datos se generan usando JSON Data Generator y se escriben en una cola Kafka, para posteriormente ser consumidos y procesados por Spark.
 
 1- Instalar JSON Data Generator: https://github.com/acesinc/json-data-generator
 
