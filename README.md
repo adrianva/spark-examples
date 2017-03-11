@@ -2,6 +2,7 @@
 Spark examples using PySpark
 
 ## pokemon.py
+Ejemplo de uso de Dataframes, así de cómo integrar de Spark con Hive.
 
 1- Instalar HIVE:
 	Seguir los pasos descritos en el siguiente enlance:
@@ -21,9 +22,9 @@ Spark examples using PySpark
 
 	Asegurarnos de que hive-site.xml contiene las siguientes líneas:
 	<property>
-      <name>hive.metastore.warehouse.dir</name>
-      <value>/Users/adrian/Documents/hive-warehouse</value>
-    </property>
+      		<name>hive.metastore.warehouse.dir</name>
+      		<value>/Users/adrian/Documents/hive-warehouse</value>
+    	</property>
 
     Por alguna razón aún cambiando por código la ruta del Hive Warehouse no me cogía la ruta:
     hive_context.setConf("hive.warehouse.dir", "/Users/adrian/Documents/hive-warehouse") # Esto no funciona
